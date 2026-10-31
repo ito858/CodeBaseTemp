@@ -3,6 +3,13 @@
 This repository is a durable project-memory template for OpenCode. It uses plain
 Markdown, YAML, and Git; it does **not** require the OpenSpec CLI to be installed.
 
+## Clone
+
+```sh
+git clone https://github.com/ito858/CodeBaseTemp.git
+cd CodeBaseTemp
+```
+
 ## Start here
 
 1. Replace the placeholders in `docs/PROJECT.md` and `docs/product/`.
