@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permissions": [
+    // Deny direct dotenv reads, then permit deliberately safe example files.
+    { "action": "read", "resource": ".env*", "effect": "deny" },
+    { "action": "read", "resource": "**/.env*", "effect": "deny" },
+    { "action": "read", "resource": ".env.exam**", "effect": "allow" },
+    { "action": "read", "resource": "**/.env.exam**", "effect": "allow" },
+
+    // Block ordinary shell commands that name dotenv files; examples are allowed.
+    { "action": "shell", "resource": "* .env*", "effect": "deny" },
+    { "action": "shell", "resource": "* */.env*", "effect": "deny" },
+    { "action": "shell", "resource": "* .env.exam**", "effect": "allow" },
+    { "action": "shell", "resource": "* */.env.exam**", "effect": "allow" }
+  ]
+}

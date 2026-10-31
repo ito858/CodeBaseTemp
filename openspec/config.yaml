@@ -1,0 +1,22 @@
+# Compatible with the OpenSpec spec-driven schema when the optional CLI is added.
+schema: spec-driven
+context: |
+  Prompting is temporary; structure is permanent. Keep canonical project knowledge
+  in the repository. Preserve raw inbox material. Flag conflicts instead of
+  silently resolving them. Link rather than duplicate requirements.
+rules:
+  proposal:
+    - Identify affected canonical documentation and unresolved questions.
+  design:
+    - Describe documentation and specification updates alongside technical design.
+  tasks:
+    - Include verification and documentation maintenance tasks when applicable.
+operations:
+  apply:
+    guidance:
+      - Keep tasks truthful; do not mark unverified work complete.
+      - Update docs/state/current.md after meaningful implementation work.
+  archive:
+    guidance:
+      - Synchronize approved specification deltas before archiving.
+      - Record remaining follow-up work and drift explicitly.

@@ -1,0 +1,3 @@
+# Local OpenCode and operating-system state
+.opencode/local/
+.DS_Store
